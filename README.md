@@ -39,7 +39,8 @@ sudo iptables -F
 二、安装
 
 1、source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
-此时，直接在v2ray更改传输方式17 vless xtls是不行的！！！！报错，估计是v2ray已经移除xtls的结果
+
+此时，直接在v2ray更改传输方式17 vless xtls是不行的！！！！会报错，估计是v2ray已经移除xtls的结果
 
 2、退出到root
 
