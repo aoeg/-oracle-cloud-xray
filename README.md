@@ -34,8 +34,11 @@ chkconfig iptables off
 或者开放所有端口!
 
 sudo iptables -P INPUT ACCEPT
+
 sudo iptables -P FORWARD ACCEPT
+
 sudo iptables -P OUTPUT ACCEPT
+
 sudo iptables -F
 
 二、安装
