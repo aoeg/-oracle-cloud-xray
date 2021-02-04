@@ -9,6 +9,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 ## [中文](README.md)  [English](README_EN.md)
 
 走了弯路，补充下甲骨文安装xray的方法：
+
 一、防火墙设置
 
 1、同时还需要关闭iptabls 或者 firewalld ！ #停止firewall
