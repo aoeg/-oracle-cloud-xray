@@ -12,17 +12,23 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 
 一、防火墙设置
 
-1、同时还需要关闭iptabls 或者 firewalld ！ #停止firewall
+1、同时还需要关闭iptabls 或者 firewalld ！ 
+
+#停止firewall
 systemctl stop firewalld.service
+
 #禁止firewall开机启动
 
 systemctl disable firewalld.service
+
 #关闭iptables
 
 service iptables stop
+
 #去掉iptables开机启动
 
 chkconfig iptables off
+
 或者开放所有端口!
 
 sudo iptables -P INPUT ACCEPT
@@ -31,10 +37,14 @@ sudo iptables -P OUTPUT ACCEPT
 sudo iptables -F
 
 二、安装
+
 1、source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
 此时，直接在v2ray更改传输方式17 vless xtls是不行的！！！！报错，估计是v2ray已经移除xtls的结果
+
 2、退出到root
+
 3、直接打xray，然后自动安装xray
+
 4、进入xray修改传输方式为vless xtls即可。
 
 
